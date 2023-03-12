@@ -23,4 +23,4 @@ nav['id'] = "'"
 
 nav.submit()
 soup = BeautifulSoup(nav.response().read(),'html5lib')
-print(soup.pre.string)
+print(soup.prefix)
