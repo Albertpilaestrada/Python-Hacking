@@ -22,5 +22,11 @@ nav.select_form(nr=0)
 nav['id'] = "'"
 
 nav.submit()
+
+#print(nav.response().read())
+
+#for f in nav.forms():
+   #print(f)
+
 soup = BeautifulSoup(nav.response().read(),'html5lib')
-print(soup.prefix)
+print(soup())
