@@ -30,3 +30,4 @@ nav.submit()
 
 soup = BeautifulSoup(nav.response().read(),'html5lib')
 print(soup())
+
