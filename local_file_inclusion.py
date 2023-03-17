@@ -1,7 +1,3 @@
-#!/us/bin/env python
-#_*_ coding: utf8 _*_
-
-
 import argparse
 import requests
 from bs4 import BeautifulSoup
