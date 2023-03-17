@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-#_*_ coding: utf8 _*_
-
 import json
 import urllib
 from urllib.request import urlopen
