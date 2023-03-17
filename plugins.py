@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-#_*_ coding: utf8 _*_
-
 import requests
 from os import path
 from progress.bar import Bar
