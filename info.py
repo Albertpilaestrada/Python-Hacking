@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-#_*_ coding: utf8 _*_
-
 from subprocess import check_output
 import subprocess
 
