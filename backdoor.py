@@ -1,6 +1,4 @@
 #Client Code
-#!/usr/bin/env python
-#_*_ coding: utf8 _*_
 
 import socket
 import subprocess
@@ -22,10 +20,7 @@ try:
 except:
     pass
 
-
 #ServerCode
-#!/usr/bin/env python
-#_*_ coding: utf8 _*_
 
 import socket
 
