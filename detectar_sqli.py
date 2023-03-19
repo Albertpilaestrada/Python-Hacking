@@ -5,7 +5,7 @@ nav = mechanize.Browser()
 nav.set_handle_robots(False)
 nav.set_handle_equiv(False)
 nav.addheaders = [('User-Agent','Firefox')]
-nav.open("http://192.168.0.21:42001/index.php")
+nav.open("http://127.0.0.1:42001/index.php")
 nav.select_form(nr=0)
 
 nav['username'] = 'admin'
@@ -13,17 +13,11 @@ nav['password'] = 'password'
 
 nav.submit()
 
-nav.open("http://192.168.0.21:42001/vulnerabilities/sqli/")
+nav.open("http://127.0.0.1:42001/vulnerabilities/sqli/")
 nav.select_form(nr=0)
 
-nav['id'] = "'"
+nav['id'] = '1'
 
 nav.submit()
-
-#print(nav.response().read())
-
-#for f in nav.forms():
-   #print(f)
-
 soup = BeautifulSoup(nav.response().read(),'html5lib')
-print(soup())
+print(soup)
